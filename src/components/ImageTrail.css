@@ -1,0 +1,31 @@
+.image-trail-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    /* Let all clicks pass through */
+    z-index: 1;
+    /* Above background, behind navbar/text if needed */
+    overflow: hidden;
+}
+
+.image-trail-item {
+    position: absolute;
+    width: clamp(200px, 15vw, 300px);
+    aspect-ratio: 4 / 5;
+    pointer-events: none;
+    box-shadow: 0 20px 40px rgba(17, 17, 17, 0.15);
+    transform-origin: center center;
+    border-radius: 40px;
+    /* Squircle */
+    overflow: hidden;
+}
+
+.image-trail-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}

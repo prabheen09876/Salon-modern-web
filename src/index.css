@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --color-dark: #111111;
+  --color-light: #fcfcfc;
+  --color-gold: #f2b90d;
+  --color-cream: #faf9f6;
+  --color-gold-hover: #d19f07;
+  --font-main: 'Geist', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  /* Hide default cursor */
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.btn-primary {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border: none;
+  padding: 16px 36px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 60px;
+  /* Pill shape */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-main);
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Squircles */
+.squircle {
+  border-radius: 40px;
+}

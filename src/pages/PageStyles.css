@@ -1,0 +1,130 @@
+.page-container {
+    min-height: 100vh;
+    padding-top: 150px;
+    background-color: var(--color-light);
+    /* Light background */
+}
+
+.page-header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-title {
+    font-size: clamp(3rem, 6vw, 6rem);
+    color: var(--color-dark);
+    /* Dark text */
+    margin-bottom: 20px;
+    line-height: 1;
+    font-family: var(--font-display);
+    letter-spacing: -2px;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: rgba(17, 17, 17, 0.7);
+    /* Dark semi-transparent */
+}
+
+.page-content {
+    padding: 0 20px 100px;
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+    font-family: var(--font-display);
+    letter-spacing: -1px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: rgba(17, 17, 17, 0.8);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-image-wrapper {
+    border-radius: 40px;
+    /* Squircle */
+    overflow: hidden;
+}
+
+.about-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Booking Form */
+.booking-section {
+    display: flex;
+    justify-content: center;
+}
+
+.booking-form {
+    background: rgba(17, 17, 17, 0.03);
+    /* Light subtle background */
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 40px;
+    /* Squircle form */
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid rgba(17, 17, 17, 0.05);
+    /* Subtle border for light theme */
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--color-dark);
+    font-weight: 500;
+}
+
+.magnetic-input {
+    width: 100%;
+    padding: 15px;
+    background: rgba(17, 17, 17, 0.05);
+    /* Light input field background */
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    /* Visible border */
+    border-radius: 12px;
+    color: var(--color-dark);
+    /* Dark typing text */
+    font-family: var(--font-main);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.magnetic-input:focus {
+    border-color: var(--color-dark);
+    /* Highlight on focus */
+    background: rgba(17, 17, 17, 0.08);
+    /* Slightly darker focus */
+}
+
+.magnetic-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
